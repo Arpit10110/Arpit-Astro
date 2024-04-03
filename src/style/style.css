@@ -12,7 +12,7 @@ html{
 body{
     background-color: black;
     color: white;
-    /* cursor: url(../assets/cursor.png),auto; */
+    cursor: url(../assets/cursor.png),auto;
 }
 
 @media only screen  and (width<=600px) {

@@ -1,0 +1,79 @@
+.ans {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: black;
+  }
+  
+  .ansbox {
+    border: 2px solid;
+    width: 20%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 3rem;
+    border-radius: 1rem;
+    background-color: #222222;
+  }
+  
+  .ans-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .ans-btn button:nth-child(1) {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #1d2dff;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .ans-btn button:nth-child(2) {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+.video{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 15;
+    overflow: hidden;
+    background-color: black;
+}
+video{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media only screen and (width<=600px) {
+    .ansbox{
+        width: 80%;
+    }
+    .video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

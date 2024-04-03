@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="BtnDiv">
             <CloseIcon onClick={closefun} className="CloseBtn" />
           </div>
-          <Link onClick={closefun}  to="/">Home</Link>
+          <Link onClick={closefun}  to="/home">Home</Link>
           <Link onClick={closefun}  to="/projects">Projects</Link>
           <Link onClick={closefun} to="/cerrtificates">Certificates</Link>
           <Link onClick={closefun} to="/contact">Contact</Link>

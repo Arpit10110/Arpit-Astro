@@ -1,4 +1,4 @@
-import React,{useEffect,Suspense} from "react";
+import React,{useEffect} from "react";
 import Spline from "@splinetool/react-spline";
 import "../style/home.css";
 import { TypeAnimation } from "react-type-animation";
@@ -11,7 +11,8 @@ import InstaImg from "../assets/instagram.png"
 import TwiterImg from "../assets/twitter.png" 
 import LinkdinImg from "../assets/linkedin.png" 
 import Snapchat from "../assets/snapchat.png" 
-const Home = () => {
+import { useState } from "react";
+const HomePage = () => {
     const downloadresume=()=>{
         window.open("https://drive.google.com/file/d/1fVCd2zqFGBzYAeI-biyLdByTdt9VgoD_/view?usp=sharing");
     }
@@ -19,7 +20,7 @@ const Home = () => {
       document.title = "Arpit | Home";
       AOS.init();
       AOS.refresh();
-    }, []); 
+    }, []);
   return (
     <>
       <div className="section1">
@@ -43,8 +44,10 @@ const Home = () => {
           </div>
           <button onClick={downloadresume}>Launch Resume 🚀</button>
         </div>
-        <div className="spline-rocket" data-aos="fade-up" data-aos-duration="2000">
-        <Spline scene="https://prod.spline.design/dlu8xkp09w7IB-L1/scene.splinecode" />
+        <div className="spline-rocket" >
+        {/* <Spline scene="https://prod.spline.design/dlu8xkp09w7IB-L1/scene.splinecode" /> */}
+        {/* data-aos="fade-up" data-aos-duration="2000" */}
+        <Spline scene="https://prod.spline.design/tdBWR4CBjgIncqxz/scene.splinecode" />
         </div>
       </div> 
       <div className="section2">
@@ -68,10 +71,9 @@ const Home = () => {
         </div>
       </div>
       <div className="section3">
-
       </div>
     </>
   );
 };
 
-export default Home;
+export default HomePage;
